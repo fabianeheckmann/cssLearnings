@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: black;
+    color: blanchedalmond;
+    overflow: auto;
+    border-bottom: 30px solid rgb(153, 0, 255);
+    margin: 0;
+}
+
+
+.titulo {
+    
+    margin: 0;
+    float: left;
+    color:lightgrey
+}
+
+.destaque {
+    color: rgb(153, 0, 255);
+}
+
+
+.navbar a {
+    text-decoration-line: none;
+}
+
+.navbar {
+    text-transform: uppercase;
+    list-style: none;
+    float: right;
+    color: lightslategray;
+}
+
+.home {
+    color: rgb(153, 0, 255);
+}
+
+.sobre {
+    color: lightgray;
+}
+
+.navbar li {
+    float: left;
+    margin-left: 0.5cm;
+}
+
+.banner {
+    background-color: rgb(153, 0, 255);
+    background-image: url(imgs/iot.jpg);
+    text-align: initial;
+    background-size: cover;
+    height: 400px;
+    border-bottom: 120px solid black;
+}
+
+.banner h1 {
+    margin: 0;
+    padding-top: 60px;
+    font-size: 50px;
+}
+
+
+
+.titulo h1  {
+    border-top: 30px solid rgb(153, 0, 255);
+    margin: 0;
+    text-align: center;
+    color: black;
+    padding-top: 20px;
+    background-color: rgb(253, 253, 253);
+}
+
+.box {
+    overflow: auto;
+    background-color: white;
+    margin-top: 30px;
+}
+
+.box img {
+    height: 100px;
+    
+}
+
+.box-item h3 {
+    margin: 0;
+}
+
+.box-item {
+    text-align: initial;
+    color: rgb(2, 2, 2);
+    float: left;
+    width: 46%;
+    padding: 2%;
+    padding-top: 1px;
+}
+
+.box-item img {
+    float: left;
+    padding: 10px;
+}
