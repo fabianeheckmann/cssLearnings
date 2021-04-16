@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,11 +13,12 @@
         .meu-grafico {
             width: 50%;
             margin: auto;
-         
+
         }
     </style>
 
 </head>
+
 <body>
     <div class="meu-grafico">
 
@@ -24,80 +26,78 @@
 
     </div>
 </body>
+
 </html>
 
 <script>
-    // ctx é o contexto. Onde é para o gráfico ser renderizado? 
-    // Na div myChart! Vamos selecioná-la por getElementById
+
     var ctx = document.getElementById('myChart');
 
-    // ao criar um new Chart, colocamos ->
-    // (contexto, { type, data e options} )
+
     var meuGrafico = new Chart(ctx, {
-        // TYPE -> qual o tipo do gráfico? será um gráfico de barras? linhas? define aqui
+
         type: 'line',
 
-        // DATA -> os dados renderizados no gráfico:
-        data: {
-            // Informações em Eixo X
-            labels: ["7:00", "9:00", "12:00", "14:00", "17:00", "18:00"],
-            // Datasets -> grupos de dados!
-            datasets: [
-            // Primeiro dataset    
-            {
-                // Qual o título deste dataset?
-                label: "luz natural",
-                // Dados? Lembre-se, respectivos a labels.
-                data: [350, 400, 500, 400, 300, 100  ],
-                // expessura da linha
-                borderWidth: 10,
-                // cor da linha - em rgba, a é a opacidade.
-                // 1 = 100% // 0.5 = 50%
-                borderColor: 'yellow',
-                // cor de "fundo" dos dados na tela. transparent = sem cor.
-                backgroundColor: 'transparent',
-            },
 
-            // Segundo dataset
-            {
-                // igual o anterior. Mas, aqui, type line
-                type: 'line',
-                label: "luz artificial",
-                data: [200, 100, 50, 200, 300, 400],
-                borderWidth: 10,
-                borderColor: 'rgba(50, 185, 205, .5)',
-                backgroundColor: 'transparent'
-            }
+        data: {
+
+            labels: ["7:00", "9:00", "12:00", "14:00", "17:00", "18:00"],
+
+            datasets: [
+
+                {
+
+                    label: "luz natural",
+
+                    data: [350, 400, 500, 400, 300, 100],
+
+                    borderWidth: 10,
+
+                    borderColor: 'yellow',
+
+                    backgroundColor: 'transparent',
+                },
+
+
+                {
+
+                    type: 'line',
+                    label: "luz artificial",
+                    data: [200, 100, 50, 200, 300, 400],
+                    borderWidth: 10,
+                    borderColor: 'rgba(50, 185, 205, .5)',
+                    backgroundColor: 'transparent'
+                }
             ]
         },
-        
-        
+
+
         options: {
-            
+
             title: {
                 display: true,
                 fontSize: 40,
                 text: "medida de lux necessário",
                 position: 'top',
-                
+
             },
             legend: {
-               
+
                 display: true,
                 reverse: true,
                 position: 'right'
             },
 
             layout: {
-            padding: {
-               
-                left: 70,
-                top: 70
-            },
-           
-        }
+                padding: {
+
+                    left: 70,
+                    top: 70
+                },
+
+            }
         }
     })
 
-   
+
 </script>
